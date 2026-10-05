@@ -1,0 +1,21 @@
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Georgia,"Times New Roman",serif;color:#4a2934;background:radial-gradient(circle at 15% 10%,rgba(255,255,255,.9),transparent 30%),linear-gradient(135deg,#fff0f4,#fce4ec)}
+.container{width:min(850px,calc(100% - 32px));margin:auto;padding:60px 0}
+.card,.paper{background:rgba(255,255,255,.94);box-shadow:0 25px 70px rgba(111,45,67,.18)}
+.card{max-width:620px;margin:10vh auto;padding:55px 35px;border-radius:28px;text-align:center}
+.paper{padding:60px clamp(25px,8vw,85px);border-radius:10px;line-height:1.9;font-size:18px}
+.envelope{font-size:90px;animation:float 2.4s ease-in-out infinite}
+.eyebrow{text-transform:uppercase;letter-spacing:4px;font-size:12px;color:#a55a70}
+h1{font-size:clamp(32px,7vw,52px);line-height:1.15}
+.paper h2{font-size:42px}.paper h3{text-align:center;color:#b63e61;font-size:clamp(25px,5vw,34px);margin:35px 0 20px}
+.center{text-align:center}.italic{font-style:italic}
+.choices{display:flex;justify-content:center;gap:15px;margin:35px 0}
+button{border:0;cursor:pointer;font-family:inherit;font-size:17px;font-weight:bold;padding:15px 30px;border-radius:999px;transition:.2s ease}
+button:hover:not(:disabled){transform:translateY(-3px);box-shadow:0 10px 25px rgba(100,40,60,.2)}
+button:disabled{opacity:.65;cursor:wait}
+.primary,.yes{background:#c94f72;color:white}.no{background:#8d7b81;color:white}
+.signature{text-align:right;font-style:italic;margin-top:50px}
+.big-heart{font-size:80px;animation:pulse 1.2s infinite}.hidden{display:none!important}
+.floating-hearts{position:fixed;top:18px;left:50%;transform:translateX(-50%);opacity:.22;font-size:25px;pointer-events:none}
+@keyframes float{50%{transform:translateY(-10px)}}@keyframes pulse{50%{transform:scale(1.1)}}
+@media(max-width:600px){.container{width:calc(100% - 20px);padding:25px 0}.card{padding:40px 22px;margin:8vh auto}.paper{padding:40px 22px;font-size:17px}.choices{flex-direction:column}.choices button{width:100%}.paper h2{font-size:34px}}
